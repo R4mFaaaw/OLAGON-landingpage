@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Developer OLAGON</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-800">
+
+<!-- NAVBAR -->
+  <nav class="fixed w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-primary rounded-full"></div>
+          <span class="font-bold text-xl text-primary">OLAGON</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index.html" class="hover:text-primary">Beranda</a>
+          <a href="produk.html" class="hover:text-primary">Produk</a>
+          <a href="solusi.html" class="hover:text-primary">Solusi</a>
+          <a href="bisnis.html" class="hover:text-primary">Bisnis</a>
+          <a href="developer.html" class="hover:text-primary">Developer</a>
+          <a href="kontak.html" class="hover:text-primary">Kontak</a>
+        </div>
+        <div class="flex space-x-4">
+          <button class="text-sm font-semibold">Masuk</button>
+          <button class="bg-primary text-white px-4 py-2 rounded-full text-sm">Daftar</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<section class="py-24">
+  <h1 class="text-4xl font-bold text-center mb-12">
+    Developer <span class="text-indigo-500">OLAGON</span>
+  </h1>
+
+  <!-- WRAPPER -->
+  <div class="overflow-hidden">
+    <!-- TRACK -->
+    <div class="dev-track flex gap-6 px-6">
+
+      <!-- CARD -->
+      <div class="dev-card"
+        style="background-image:url('https://images.unsplash.com/photo-1607746882042-944635dfe10e')">
+        <div class="info">
+          <h3>Rafa</h3>
+          <p>Frontend Engineer</p>
+        </div>
+      </div>
+
+      <div class="dev-card"
+        style="background-image:url('https://images.unsplash.com/photo-1527980965255-d3b416303d12')">
+        <div class="info">
+          <h3>Alya</h3>
+          <p>Backend Engineer</p>
+        </div>
+      </div>
+
+      <div class="dev-card"
+        style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d')">
+        <div class="info">
+          <h3>Dimas</h3>
+          <p>Mobile Developer</p>
+        </div>
+      </div>
+
+      <div class="dev-card"
+        style="background-image:url('https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9')">
+        <div class="info">
+          <h3>Nina</h3>
+          <p>DevOps Engineer</p>
+        </div>
+      </div>
+
+      <!-- DUPLICATE (UNTUK LOOPING MULUS) -->
+      <div class="dev-card"
+        style="background-image:url('https://images.unsplash.com/photo-1607746882042-944635dfe10e')">
+        <div class="info">
+          <h3>Rafa</h3>
+          <p>Frontend Engineer</p>
+        </div>
+      </div>
+
+      <div class="dev-card"
+        style="background-image:url('https://images.unsplash.com/photo-1527980965255-d3b416303d12')">
+        <div class="info">
+          <h3>Alya</h3>
+          <p>Backend Engineer</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .dev-track {
+    animation: scroll-left 35s linear infinite;
+  }
+
+  .dev-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .dev-card {
+    flex: 0 0 280px;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem;
+    position: relative;
+    filter: brightness(45%);
+    transition: all 0.4s ease;
+  }
+
+  .dev-card:hover {
+    flex: 0 0 360px;
+    filter: brightness(100%);
+  }
+
+  .info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,.8), transparent);
+  }
+
+  .info h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .info p {
+    font-size: 0.9rem;
+    color: #c7d2fe;
+  }
+  
+</style>
+<!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">OLAGON</h3>
+        <p>Solusi digital untuk masa depan bisnis Anda.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Produk</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Website</li>
+          <li>Aplikasi</li>
+          <li>Software</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Perusahaan</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Tentang Kami</li>
+          <li>Karir</li>
+          <li>Kontak</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Ikuti Kami</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Instagram</li>
+          <li>LinkedIn</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-500 mt-10">© 2026 OLAGON. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

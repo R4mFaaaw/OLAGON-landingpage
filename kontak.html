@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak | OLAGON</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
+  <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+
+    <!-- LOGO -->
+    <a href="index.html" class="font-bold text-xl text-indigo-600">
+      OLAGON
+    </a>
+
+    <!-- MENU -->
+    <ul class="flex items-center gap-8 text-sm font-medium text-gray-700">
+      <li><a href="index.html" class="hover:text-indigo-600">Beranda</a></li>
+      <li><a href="produk.html" class="hover:text-indigo-600">Produk</a></li>
+      <li><a href="solusi.html" class="hover:text-indigo-600">Solusi</a></li>
+      <li><a href="developer.html" class="hover:text-indigo-600">Developer</a></li>
+      <li>
+        <a href="kontak.html"
+           class="text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1">
+          Kontak
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+</header>
+
+
+
+  <!-- HERO -->
+  <section class="pt-28 pb-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Hubungi Tim OLAGON</h1>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Konsultasikan kebutuhan website, aplikasi, dan software Anda. Tim kami akan menghubungi Anda secepatnya.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT + FORM -->
+  <section class="pb-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14">
+
+      <!-- INFO -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6">Informasi Kontak</h2>
+        <p class="text-gray-600 mb-8">
+          Jangan ragu untuk menghubungi kami melalui form atau kontak berikut.
+        </p>
+        <div class="space-y-6">
+          <div>
+            <p class="font-semibold">Email</p>
+            <p class="text-gray-600">hello@olagon.tech</p>
+          </div>
+          <div>
+            <p class="font-semibold">WhatsApp</p>
+            <p class="text-gray-600">+62 8xx xxxx xxxx</p>
+          </div>
+          <div>
+            <p class="font-semibold">Jam Operasional</p>
+            <p class="text-gray-600">Senin - Jumat, 09.00 - 18.00 WIB</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM LEAD -->
+      <div class="bg-white rounded-2xl shadow p-8">
+        <h3 class="text-xl font-bold mb-6">Form Konsultasi</h3>
+        <form id="leadForm" class="space-y-5">
+          <div>
+            <label class="text-sm font-medium">Nama Lengkap</label>
+            <input type="text" required class="w-full mt-1 px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+          <div>
+            <label class="text-sm font-medium">Email</label>
+            <input type="email" required class="w-full mt-1 px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+          <div>
+            <label class="text-sm font-medium">No. WhatsApp</label>
+            <input type="text" required class="w-full mt-1 px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+          <div>
+            <label class="text-sm font-medium">Kebutuhan</label>
+            <select class="w-full mt-1 px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary">
+              <option>Website</option>
+              <option>Aplikasi Mobile</option>
+              <option>Software Custom</option>
+              <option>Konsultasi</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-medium">Pesan</label>
+            <textarea rows="4" class="w-full mt-1 px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-primary text-white py-3 rounded-xl font-semibold">Kirim Permintaan</button>
+        </form>
+        <p id="successMsg" class="hidden text-green-600 text-sm mt-4">Terima kasih! Tim OLAGON akan segera menghubungi Anda.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">OLAGON</h3>
+        <p>Partner digital terpercaya untuk bisnis Anda.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Menu</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Produk</li>
+          <li>Solusi</li>
+          <li>Developer</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Kontak</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Email</li>
+          <li>WhatsApp</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Legal</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-500 mt-10">© 2026 OLAGON. All rights reserved.</div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/628xxxxxxxxx" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg flex items-center space-x-2">
+    <span class="font-semibold">WhatsApp</span>
+  </a>
+
+  <!-- JS -->
+  <script>
+  const form = document.getElementById('leadForm');
+  const successMsg = document.getElementById('successMsg');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const nama = form.querySelector('input[name="nama"]').value;
+    const email = form.querySelector('input[name="email"]').value;
+    const wa = form.querySelector('input[name="wa"]').value;
+    const kebutuhan = form.querySelector('select').value;
+    const pesan = form.querySelector('textarea').value;
+
+    const text = `Halo OLAGON,
+
+Saya tertarik untuk konsultasi.
+
+Nama: ${nama}
+Email: ${email}
+WhatsApp: ${wa}
+Kebutuhan: ${kebutuhan}
+Pesan: ${pesan}`;
+
+    const url = `https://wa.me/628978528587?text=${encodeURIComponent(text)}`;
+
+    window.open(url, '_blank');
+
+    successMsg.classList.remove('hidden');
+    form.reset();
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Developer OLAGON</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white">
+
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <h1 class="text-4xl font-bold mb-10 text-center">
+    Tim Developer <span class="text-indigo-500">OLAGON</span>
+  </h1>
+
+  <!-- CONTAINER -->
+  <div class="flex h-[420px] gap-4 group">
+
+    <!-- CARD -->
+    <div class="developer-card bg-cover bg-center rounded-2xl flex items-end p-6"
+         style="background-image:url('https://images.unsplash.com/photo-1607746882042-944635dfe10e')">
+      <div class="info">
+        <h3 class="text-xl font-bold">Rafa</h3>
+        <p class="text-sm text-gray-300">Frontend Engineer</p>
+      </div>
+    </div>
+
+    <div class="developer-card bg-cover bg-center rounded-2xl flex items-end p-6"
+         style="background-image:url('https://images.unsplash.com/photo-1527980965255-d3b416303d12')">
+      <div class="info">
+        <h3 class="text-xl font-bold">Alya</h3>
+        <p class="text-sm text-gray-300">Backend Engineer</p>
+      </div>
+    </div>
+
+    <div class="developer-card bg-cover bg-center rounded-2xl flex items-end p-6"
+         style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d')">
+      <div class="info">
+        <h3 class="text-xl font-bold">Dimas</h3>
+        <p class="text-sm text-gray-300">Mobile Developer</p>
+      </div>
+    </div>
+
+    <div class="developer-card bg-cover bg-center rounded-2xl flex items-end p-6"
+         style="background-image:url('https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9')">
+      <div class="info">
+        <h3 class="text-xl font-bold">Nina</h3>
+        <p class="text-sm text-gray-300">DevOps Engineer</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .developer-card {
+    flex: 1;
+    transition: all 0.5s ease;
+    filter: brightness(60%);
+  }
+
+  .group:hover .developer-card {
+    filter: brightness(40%);
+  }
+
+  .developer-card:hover {
+    flex: 3;
+    filter: brightness(100%);
+  }
+
+  .info {
+    background: linear-gradient(to top, rgba(0,0,0,.7), transparent);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+</style>
+
+</body>
+</html>

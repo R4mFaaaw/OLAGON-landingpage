@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk OLAGON</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+  <!-- NAVBAR -->
+  <nav class="fixed w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-primary rounded-full"></div>
+          <span class="font-bold text-xl text-primary">OLAGON</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index.html" class="hover:text-primary">Beranda</a>
+          <a href="produk.html" class="text-primary font-semibold">Produk</a>
+          <a href="solusi.html" class="hover:text-primary">Solusi</a>
+          <a href="bisnis.html" class="hover:text-primary">Bisnis</a>
+          <a href="developer.html" class="hover:text-primary">Developer</a>
+          <a href="kontak.html" class="hover:text-primary">Kontak</a>
+        </div>
+        <div class="flex space-x-4">
+          <button class="text-sm font-semibold">Masuk</button>
+          <button class="bg-primary text-white px-4 py-2 rounded-full text-sm">Daftar</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO PRODUK -->
+  <section class="pt-28 pb-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Produk Digital OLAGON</h1>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        Beragam solusi digital untuk membantu bisnis Anda berkembang melalui teknologi modern, aman, dan scalable.
+      </p>
+    </div>
+  </section>
+
+  <!-- LIST PRODUK -->
+  <section class="pb-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+      <!-- PRODUK 1 -->
+      <div class="bg-white rounded-2xl shadow p-8 hover:shadow-lg transition">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl mb-6"></div>
+        <h3 class="text-xl font-bold mb-3">Website Development</h3>
+        <p class="text-gray-600 mb-6">
+          Pembuatan website profesional mulai dari company profile, landing page, hingga e-commerce.
+        </p>
+        <ul class="text-sm text-gray-600 space-y-2 mb-6">
+          <li>• Desain modern & responsif</li>
+          <li>• SEO friendly</li>
+          <li>• Cepat & aman</li>
+        </ul>
+        <button class="text-primary font-semibold">Pelajari Selengkapnya →</button>
+      </div>
+
+      <!-- PRODUK 2 -->
+      <div class="bg-white rounded-2xl shadow p-8 hover:shadow-lg transition">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl mb-6"></div>
+        <h3 class="text-xl font-bold mb-3">Mobile App Development</h3>
+        <p class="text-gray-600 mb-6">
+          Aplikasi Android & iOS dengan performa tinggi dan pengalaman pengguna terbaik.
+        </p>
+        <ul class="text-sm text-gray-600 space-y-2 mb-6">
+          <li>• Android & iOS</li>
+          <li>• UI/UX modern</li>
+          <li>• Skalabilitas tinggi</li>
+        </ul>
+        <button class="text-primary font-semibold">Pelajari Selengkapnya →</button>
+      </div>
+
+      <!-- PRODUK 3 -->
+      <div class="bg-white rounded-2xl shadow p-8 hover:shadow-lg transition">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl mb-6"></div>
+        <h3 class="text-xl font-bold mb-3">Custom Software</h3>
+        <p class="text-gray-600 mb-6">
+          Solusi software khusus seperti ERP, dashboard, dan sistem internal perusahaan.
+        </p>
+        <ul class="text-sm text-gray-600 space-y-2 mb-6">
+          <li>• Sesuai kebutuhan bisnis</li>
+          <li>• Integrasi sistem</li>
+          <li>• Support & maintenance</li>
+        </ul>
+        <button class="text-primary font-semibold">Pelajari Selengkapnya →</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-primary text-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Siap Membangun Produk Digital?</h2>
+      <p class="text-blue-100 mb-8">Konsultasikan kebutuhan website, aplikasi, dan software Anda bersama OLAGON.</p>
+      <button class="bg-white text-primary px-8 py-3 rounded-full font-semibold">Konsultasi Gratis</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">OLAGON</h3>
+        <p>Solusi digital untuk website, aplikasi, dan software modern.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Produk</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Website</li>
+          <li>Aplikasi</li>
+          <li>Software</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Perusahaan</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Tentang Kami</li>
+          <li>Karir</li>
+          <li>Kontak</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Sosial Media</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Instagram</li>
+          <li>LinkedIn</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-500 mt-10">© 2026 OLAGON. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

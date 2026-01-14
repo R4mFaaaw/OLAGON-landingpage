@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solusi OLAGON</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+  <!-- NAVBAR -->
+  <nav class="fixed w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-primary rounded-full"></div>
+          <span class="font-bold text-xl text-primary">OLAGON</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index.html" class="hover:text-primary">Beranda</a>
+          <a href="produk.html" class="hover:text-primary">Produk</a>
+          <a href="solusi.html" class="text-primary font-semibold">Solusi</a>
+          <a href="bisnis.html" class="hover:text-primary">Bisnis</a>
+          <a href="developer.html" class="text-primary font-semibold">Developer</a>
+          <a href="kontak.html" class="hover:text-primary">Kontak</a>
+        </div>
+        <div class="flex space-x-4">
+          <button class="text-sm font-semibold">Masuk</button>
+          <button class="bg-primary text-white px-4 py-2 rounded-full text-sm">Daftar</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SOLUSI -->
+  <section class="pt-28 pb-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Solusi Digital untuk Berbagai Kebutuhan</h1>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        OLAGON menyediakan solusi teknologi yang dirancang untuk membantu bisnis, startup, dan institusi berkembang lebih cepat dan efisien.
+      </p>
+    </div>
+  </section>
+
+  <!-- SOLUSI BY SEGMENT -->
+  <section class="pb-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-14">Solusi Berdasarkan Kebutuhan</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- SOLUSI BISNIS -->
+        <div class="bg-white rounded-2xl shadow p-8 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-4">Solusi untuk Bisnis</h3>
+          <p class="text-gray-600 mb-6">
+            Digitalisasi proses bisnis agar lebih efisien, terintegrasi, dan mudah dikembangkan.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Website company profile</li>
+            <li>• Sistem ERP & dashboard</li>
+            <li>• Integrasi pembayaran & API</li>
+          </ul>
+        </div>
+
+        <!-- SOLUSI STARTUP -->
+        <div class="bg-white rounded-2xl shadow p-8 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-4">Solusi untuk Startup</h3>
+          <p class="text-gray-600 mb-6">
+            Bangun MVP dan produk digital dengan cepat untuk validasi pasar.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• MVP development</li>
+            <li>• Aplikasi mobile & web</li>
+            <li>• Skalabilitas cloud</li>
+          </ul>
+        </div>
+
+        <!-- SOLUSI INSTITUSI -->
+        <div class="bg-white rounded-2xl shadow p-8 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-4">Solusi untuk Institusi</h3>
+          <p class="text-gray-600 mb-6">
+            Sistem digital yang aman, stabil, dan sesuai kebutuhan organisasi.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Sistem informasi</li>
+            <li>• Manajemen data</li>
+            <li>• Keamanan & maintenance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEUNGGULAN -->
+  <section class="bg-gray-100 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-14">Mengapa Memilih OLAGON?</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h4 class="font-bold mb-2">Custom Solution</h4>
+          <p class="text-sm text-gray-600">Solusi sesuai kebutuhan Anda.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h4 class="font-bold mb-2">Teknologi Modern</h4>
+          <p class="text-sm text-gray-600">Stack teknologi terbaru.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h4 class="font-bold mb-2">Tim Berpengalaman</h4>
+          <p class="text-sm text-gray-600">Profesional di bidangnya.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <h4 class="font-bold mb-2">Support Berkelanjutan</h4>
+          <p class="text-sm text-gray-600">Maintenance & pengembangan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-primary text-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Temukan Solusi yang Tepat Bersama OLAGON</h2>
+      <p class="text-blue-100 mb-8">Kami siap membantu mewujudkan solusi digital terbaik untuk Anda.</p>
+      <button class="bg-white text-primary px-8 py-3 rounded-full font-semibold">Diskusi Sekarang</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">OLAGON</h3>
+        <p>Solusi digital untuk website, aplikasi, dan software.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Produk</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Website</li>
+          <li>Aplikasi</li>
+          <li>Software</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Solusi</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Bisnis</li>
+          <li>Startup</li>
+          <li>Institusi</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Kontak</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Email</li>
+          <li>WhatsApp</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-500 mt-10">© 2026 OLAGON. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

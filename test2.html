@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Developer OLAGON</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <h1 class="text-4xl font-bold text-center mb-14">
+    Developer <span class="text-indigo-500">OLAGON</span>
+  </h1>
+
+  <div class="developer-group flex h-[520px] gap-4">
+
+    <!-- CARD -->
+    <div class="dev-card active"
+      style="background-image:url('https://images.unsplash.com/photo-1607746882042-944635dfe10e')">
+      <div class="dev-info">
+        <h3>Rafa</h3>
+        <p>Lead Engineer</p>
+      </div>
+    </div>
+
+    <div class="dev-card"
+      style="background-image:url('https://images.unsplash.com/photo-1527980965255-d3b416303d12')">
+      <div class="dev-info">
+        <h3>Alya</h3>
+        <p>Backend Engineer</p>
+      </div>
+    </div>
+
+    <div class="dev-card"
+      style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d')">
+      <div class="dev-info">
+        <h3>Dimas</h3>
+        <p>Mobile Developer</p>
+      </div>
+    </div>
+
+    <div class="dev-card"
+      style="background-image:url('https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9')">
+      <div class="dev-info">
+        <h3>Nina</h3>
+        <p>DevOps Engineer</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .dev-card {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100%) brightness(35%);
+    transition: 
+      flex 0.8s cubic-bezier(.4,0,.2,1),
+      filter 0.6s ease;
+  }
+
+  .developer-group:hover .dev-card {
+    filter: grayscale(100%) brightness(25%);
+  }
+
+  .dev-card:hover {
+    flex: 4;
+    filter: grayscale(0%) brightness(100%);
+  }
+
+  .dev-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0,0,0,.85), transparent);
+  }
+
+  .dev-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .dev-info p {
+    color: #c7d2fe;
+  }
+</style>
+
+</body>
+</html>
